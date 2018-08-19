@@ -1,5 +1,150 @@
 @import 'variables';
 
 body {
-	background-color: $red-color;
+	background-color: $grey-color;
+	 font-family: Arial;
 }
+
+.form {
+	width: 60%;
+	margin: 50px auto;
+	box-shadow: 0px 5px 1px -2px #bcbcbc;
+	.head {
+		text-align: center;
+		background-color: #fff;
+		height: 88px;
+		border-top: 2px solid $red-color;
+		position: relative;
+		.fas {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			color: #c2c2c2;
+		}
+	}
+	.main {
+		background: $light-grey-color;
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr;
+		font-size: 14px;
+		font-weight: bold;
+	  
+	  .left {
+	  	padding: 40px 58px;
+	  	border-right: 1px solid $grey-color;
+
+		.facebook {
+			background: #3e5b96;
+			margin-bottom: 20px;
+			padding: 10px 45px 10px 50px;
+		}
+		.google {
+			background: $red-color;
+		}
+
+	  	button {
+	  		display: flex;
+	  		font-weight: bold;
+ 			display: inline-block;
+			vertical-align: middle;
+			padding: 0;
+			margin: 0;
+			border: none;
+			border-radius: 3px;
+			white-space: nowrap;
+			user-select: none;
+			text-decoration: none;
+			color: #fff;
+			font-size: 14px;
+
+
+		    position: relative;
+		    padding: 10px 50px;
+
+		     i {
+			  position: absolute;
+			  left: 5px;
+			  top: 0;
+		      padding: 0 0 0 5px;
+			  height: 100%;
+			  box-sizing: border-box;
+
+
+			  display: flex;
+			  align-items: center;
+		}
+	}
+	}
+	 	  .right {
+	  	padding: 40px 58px;
+
+	   .wrap {
+	   	display: block;
+	   	margin-bottom: 20px;
+		 
+		 .login {
+			width: 100%;
+		 }
+
+		 .password {
+			width: 100%;
+		 }
+
+	     label {
+	     	display: block;
+	     	margin-bottom: 5px;
+	     }
+	   }
+		.check-box {
+			display:  inline-block;
+
+			.checkbox {
+				float: left;
+			}
+		}
+		div {
+			display: flex;
+			margin-top: 24px;
+			justify-content: space-between;
+					align-items: center;
+
+			.log-btn {
+				background: #252525;
+				border: none;
+				display: inline-block;
+				vertical-align: middle;
+
+				  white-space: nowrap;
+				  user-select: none;
+				  font-family: 'Open sans';
+
+				  font-weight: bold;
+				  text-decoration: none;
+				  color: #fff;
+				  padding: 14px 30px;
+			}
+			a {
+				color: #000;
+			}
+			
+		}
+	  }
+	}
+	.footer {
+		text-align: center;
+		background: #fff;
+		padding: 20px;
+		font-size: 18px;
+		
+		p {
+			color: #666666;
+			
+			a {
+				color: #000;
+				font-weight: bold;
+			}			
+		}
+	}
+}
+
